@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Путешествие по Европе</title>
-    <link href="./css/style.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <h1>hello world</h1>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Путешествие по Европе</title>
+  <link href="./css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo">
+          <svg width="57" height="22">
+            <use xlink:href="./img/sprite.svg#logo"></use>
+          </svg>
+        </div>
+        <nav class="page-header__nav main-nav main-nav--closed">
+          <button class="main-nav__toggle">
+            <span class="visually-hidden">Меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                О путешествии
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                Цены
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--tel">
+              <a href="tel:+749978468446" class="main-nav__link main-nav__link--tel">
+                <svg width="57" height="22">
+                  <use xlink:href="./img/sprite.svg#tel"></use>
+                </svg>
+                <span>+7 (499) -784-684-46</span>
+                </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+</body>
+
 </html>

@@ -1,7 +1,8 @@
 body {
-  width: 320px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
+  width: 100%;
+  box-sizing: border-box;
   font-family: @main-font;
 }
 input {
@@ -29,13 +30,23 @@ input[type="number"]:focus {
 input[type="file"] {
   display: none;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 @media (min-width: 768px) {
-  body {
-    width: 768px;
-  }
+
 }
 @media (min-width: 1440px) {
-  body {
-    width: 1440px;
-  }
+
 }
