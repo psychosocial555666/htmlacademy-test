@@ -1,0 +1,41 @@
+body {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: @main-font;
+}
+input {
+  font-family: @main-font;
+}
+button {
+  font-family: @main-font;
+}
+textarea {
+  font-family: @main-font;
+  overflow: hidden;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+input[type="file"] {
+  display: none;
+}
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    width: 1440px;
+  }
+}
