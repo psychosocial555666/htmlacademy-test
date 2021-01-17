@@ -1,0 +1,26 @@
+.button {
+  display: block;
+  padding: 30px 40px;
+  text-decoration: none;
+  color: @white;
+  background-color: @accent;
+  border: none;
+  box-sizing: border-box;
+  position: relative;
+  width: 340px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: @accent-hover;
+  }
+}
+
+@media (max-width: @tablet) {
+  .button {
+    padding: 19px 40px;
+    font-size: 10px;
+    width: 250px;
+  }
+}

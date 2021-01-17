@@ -1,0 +1,126 @@
+.intro {
+  width: 100%;
+  background-image: url(../img/intro-desktop.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.intro__wrapper {
+  padding: 185px 47px 296px 0;
+  width: 460px;
+  box-sizing: border-box;
+  margin-left: auto;
+}
+
+.intro__title {
+  font-weight: @semi-bold;
+  font-size: 55px;
+  line-height: 80px;
+  color: @white;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.intro__description {
+  font-weight: @regular;
+  font-size: 16px;
+  line-height: 170%;
+  color: @white;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.intro__button {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 50%;
+    right: 40px;
+    transform: translate(0, -50%);
+    background-image: url(../img/arrow-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+  }
+}
+  @media (max-width: @tablet) {
+    .intro {
+      background-image: url(../img/intro-tablet.webp);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .intro__cover {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .intro__wrapper {
+      margin: 0 auto;
+      padding: 60px 185px 80px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .intro__title {
+      font-size: 30px;
+      line-height: 150%;
+      text-align: center;
+    }
+
+    .intro__description {
+      font-size: 16px;
+      line-height: 170%;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: @mobile) {
+    .intro {
+      background-image: none;
+    }
+
+    .intro__wrapper {
+      padding: 0;
+    }
+
+    .intro__title {
+      display: block;
+      width: 100%;
+      padding: 80px 16px;
+      box-sizing: border-box;
+      background-image: url(../img/intro-mobile.webp);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin-bottom: 20px;
+      font-size: 24px;
+      line-height: 150%;
+    }
+
+    .intro__cover {
+      padding: 0 16px;
+      margin-bottom: 50px;
+    }
+
+    .intro__description {
+      color: @dark;
+      padding: 0;
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 170%;
+    }
+
+    .intro__button {
+      width: 100%;
+    }
+  }

@@ -4,6 +4,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   font-family: @main-font;
+  color: @dark;
 }
 input {
   font-family: @main-font;
@@ -44,9 +45,41 @@ input[type="file"] {
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
-
+.title {
+  font-weight: @semi-bold;
+  font-size: 55px;
+  line-height: 80px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: @accent;
+  }
 }
-@media (min-width: 1440px) {
+
+@media (max-width: @tablet) {
+  .title {
+    margin: 0;
+    padding: 0;
+    font-weight: @semi-bold;
+    font-size: 30px;
+    line-height: 150%;
+    text-align: center;
+
+    br {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+}
+@media (max-width: @mobile) {
 
 }

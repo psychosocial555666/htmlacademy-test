@@ -1,0 +1,35 @@
+.tabs {
+  width: 900px;
+}
+
+.tabs__nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid fade(@dark, 30);
+}
+
+.tabs__link {
+  font-weight: @medium;
+  font-size: 20px;
+  line-height: 24px;
+  color: fade(@dark, 30);
+  text-decoration: none;
+  padding: 15px 0;
+}
+
+.tabs__link--active {
+  color: @accent;
+}
+
+.tabs__content {
+  width: 100%;
+}
+
+.tabs__pane {
+  display: none;
+  margin-bottom: 50px;
+}
+
+.tabs__pane--show {
+  display: flex;
+}
