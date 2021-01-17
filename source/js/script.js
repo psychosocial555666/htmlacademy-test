@@ -2,14 +2,9 @@ let tabLinks = document.querySelectorAll(".tabs__link");
 let tabContents = document.querySelectorAll(".tabs__pane");
 let tabLinkActive = document.querySelector(".tabs__link--active");
 let tabContentOpened = document.querySelector(".tabs__pane--show")
+let cardLinks = document.querySelectorAll(".visit__link");
 
-let onTabLinkPress = (evt)=> {
-  evt.preventDefault();
-  if (evt.target.classList.contains("tabs__link--active")) {
-    console.log("active");
-    return;
-  }
-
+let onLinkPress = (evt)=> {
   let activeLinkName = evt.target.name;
 
   tabLinks.forEach((item) => {
@@ -29,6 +24,19 @@ let onTabLinkPress = (evt)=> {
   });
 }
 
+let onTabLinkPress = (evt)=> {
+  evt.preventDefault();
+  if (evt.target.classList.contains("tabs__link--active")) {
+    console.log("active");
+    return;
+  }
+  onLinkPress(evt);
+}
+
 tabLinks.forEach((item) => {
   item.addEventListener("click", onTabLinkPress);
+})
+
+cardLinks.forEach((item) => {
+  item.addEventListener("click", onLinkPress);
 })

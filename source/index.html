@@ -17,7 +17,7 @@
             <use xlink:href="./img/sprite.svg#logo"></use>
           </svg>
         </div>
-        <nav class="page-header__nav main-nav main-nav--closed">
+        <nav class="page-header__nav main-nav main-nav--nojs">
           <button class="main-nav__toggle">
             <span class="visually-hidden">Меню</span>
           </button>
@@ -57,7 +57,7 @@
             В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота
             природы.
           </p>
-          <a href="#" class="button intro__button">
+          <a href="#tabs-list" class="button intro__button">
             Смотреть тур
           </a>
         </div>
@@ -77,7 +77,7 @@
 
         <ul class="visit__list">
           <li class="visit__item">
-            <a href="#" class="visit__link">
+            <a href="#tabs-list"  name="greece" class="visit__link">
               <picture>
                 <img class=".visit__picture" src="./img/visit-gre.webp" srcset="./img/visit-gre@2x.webp 2x"
                   alt="Greece">
@@ -88,7 +88,7 @@
             </a>
           </li>
           <li class="visit__item">
-            <a href="#" class="visit__link">
+            <a href="#tabs-list"  name="albania" class="visit__link">
               <picture>
                 <img class=".visit__picture" src="./img/visit-alb.webp" srcset="./img/visit-alb@2x.webp 2x"
                   alt="Albania">
@@ -99,7 +99,7 @@
             </a>
           </li>
           <li class="visit__item">
-            <a href="#" class="visit__link">
+            <a href="#tabs-list"  name="makedonia" class="visit__link">
               <picture>
                 <img class=".visit__picture" src="./img/visit-mak.webp" srcset="./img/visit-mak@2x.webp 2x"
                   alt="Makedonia">
@@ -110,7 +110,7 @@
             </a>
           </li>
           <li class="visit__item">
-            <a href="#" class="visit__link">
+            <a href="#tabs-list"  name="montenegro" class="visit__link">
               <picture>
                 <img class=".visit__picture" src="./img/visit-mon.webp" srcset="./img/visit-mon@2x.webp 2x"
                   alt="Montenegro">
@@ -121,7 +121,7 @@
             </a>
           </li>
           <li class="visit__item">
-            <a href="#" class="visit__link">
+            <a href="#tabs-list"  name="croatia" class="visit__link">
               <picture>
                 <img class=".visit__picture" src="./img/visit-cro.webp" srcset="./img/visit-cro@2x.webp 2x"
                   alt="Croatia">
@@ -138,14 +138,18 @@
 
   <section class="catalog">
     <div class="container">
-      <div class="tabs">
-        <div class="tabs__nav">
-          <a class="tabs__link tabs__link--active" href="#" name="greece">Греция</a>
-          <a class="tabs__link" href="#" name="albania">Албания</a>
-          <a class="tabs__link" href="#" name="makedonia">Македония</a>
-          <a class="tabs__link" href="#" name="montenegro">Черногория</a>
-          <a class="tabs__link" href="#" name="croatia">Хорватия</a>
+      <div class="tabs" name="tabs-list">
+        <a class="visually-hidden" href="#" name="tabs-list"></a>
+        <div class="tabs__wrapper">
+          <div class="tabs__nav">
+            <a class="tabs__link tabs__link--active" href="#" name="greece">Греция</a>
+            <a class="tabs__link" href="#" name="albania">Албания</a>
+            <a class="tabs__link" href="#" name="makedonia">Македония</a>
+            <a class="tabs__link" href="#" name="montenegro">Черногория</a>
+            <a class="tabs__link" href="#" name="croatia">Хорватия</a>
+          </div>
         </div>
+
         <div class="tabs__content">
           <article class="tabs__pane tabs__pane--show tab" id="greece">
             <div class="tab__information information">
@@ -163,7 +167,7 @@
             </div>
             <div class="tab__picture">
               <picture>
-                <source media="(max-width: 768px)"
+                <source media="(max-width: 767px)"
                   srcset="./img/tab-mobile-gre.webp 1x, ./img/tab-mobile-gre@2x.webp 2x">
                 <img src="./img/tab-gre.webp" srcset="./img/tab-gre@2x.webp 2x" alt="Greece">
               </picture>
@@ -199,7 +203,7 @@
             </div>
             <div class="tab__picture">
               <picture>
-                <source media="(max-width: 768px)"
+                <source media="(max-width: 767px)"
                   srcset="./img/tab-mobile-alb.webp 1x, ./img/tab-mobile-alb@2x.webp 2x">
                 <img src="./img/tab-alb.webp" srcset="./img/tab-alb@2x.webp 2x" alt="Albania">
               </picture>
@@ -233,7 +237,7 @@
             </div>
             <div class="tab__picture">
               <picture>
-                <source media="(max-width: 768px)"
+                <source media="(max-width: 767px)"
                   srcset="./img/tab-mobile-mak.webp 1x, ./img/tab-mobile-mak@2x.webp 2x">
                 <img src="./img/tab-mak.webp" srcset="./img/tab-mak@2x.webp 2x" alt="Makedonia">
               </picture>
@@ -268,7 +272,7 @@
             </div>
             <div class="tab__picture">
               <picture>
-                <source media="(max-width: 768px)"
+                <source media="(max-width: 767px)"
                   srcset="./img/tab-mobile-mon.webp 1x, ./img/tab-mobile-mon@2x.webp 2x">
                 <img src="./img/tab-mon.webp" srcset="./img/tab-mon@2x.webp 2x" alt="Montenegro">
               </picture>
@@ -302,7 +306,7 @@
             </div>
             <div class="tab__picture">
               <picture>
-                <source media="(max-width: 768px)"
+                <source media="(max-width: 767px)"
                   srcset="./img/tab-mobile-cro.webp 1x, ./img/tab-mobile-cro@2x.webp 2x">
                 <img src="./img/tab-cro.webp" srcset="./img/tab-cro@2x.webp 2x" alt="Croatia">
               </picture>
@@ -325,6 +329,136 @@
             </div>
           </article>
         </div>
+      </div>
+    </div>
+
+    <div class="price">
+      <div class="container">
+        <div class="price__wrapper">
+          <div class="price__cover">
+            <h2 class="price__title title">
+              Цены
+            </h2>
+            <p class="price__description">
+              Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!
+            </p>
+            <div class="price__contacts">
+              <h3 class="price__connect">Свяжитесь с нами</h3>
+              <a href="tel:+749978468446" class="price__phone">
+                <svg width="57" height="22">
+                  <use xlink:href="./img/sprite.svg#tel"></use>
+                </svg>
+                <span>+7 (499) -784-684-46</span>
+              </a>
+            </div>
+          </div>
+          <div class="price__item rate">
+            <h3 class="rate__name">
+              Комплексный
+              <span class="rate__cost">$1999</span>
+            </h3>
+            <p class="rate__description">
+              Ознакомьтесь с перечнем того, что входит в данный пакет
+            </p>
+            <ul class="rate__list">
+              <li class="rate__item">
+                <svg width="22" height="22">
+                  <use xlink:href="./img/sprite.svg#tick"></use>
+                </svg>
+                Разработанный маршрут с гидом группы
+              </li>
+              <li class="rate__item">
+                <svg width="22" height="22">
+                  <use xlink:href="./img/sprite.svg#tick"></use>
+                </svg>
+                Перелет, трансфер и проживание в отелях
+              </li>
+              <li class="rate__item">
+                <svg width="22" height="22">
+                  <use xlink:href="./img/sprite.svg#tick"></use>
+                </svg>
+                Завтраки, ужины в отелях и ланчи на природе
+              </li>
+              <li class="rate__item">
+                <svg width="22" height="22">
+                  <use xlink:href="./img/sprite.svg#tick"></use>
+                </svg>
+                Экскурсии по удивительно красивым местам Европы
+              </li>
+            </ul>
+            <button class="rate__buy button">
+              Купить тур сейчас
+            </button>
+          </div>
+          <div class="price__item rate">
+            <h3 class="rate__name">
+              Экономный
+              <span class="rate__cost">$1399</span>
+            </h3>
+            <p class="rate__description">
+              Ознакомьтесь с перечнем того, что входит в данный пакет             </p>
+            <ul class="rate__list">
+              <li class="rate__item">
+                <svg width="22" height="22">
+                  <use xlink:href="./img/sprite.svg#tick"></use>
+                </svg>
+                Разработанный маршрут с гидом группы
+              </li>
+              <li class="rate__item">
+                <svg width="22" height="22">
+                  <use xlink:href="./img/sprite.svg#tick"></use>
+                </svg>
+                Перелет и трансфер
+              </li>
+              <li class="rate__item">
+                <svg width="22" height="22">
+                  <use xlink:href="./img/sprite.svg#tick"></use>
+                </svg>
+                Проживание в хостелах при отелях
+              </li>
+              <li class="rate__item">
+                <svg width="22" height="22">
+                  <use xlink:href="./img/sprite.svg#tick"></use>
+                </svg>
+                Только завтраки в отелях
+              </li>
+              <li class="rate__item">
+                <svg width="22" height="22">
+                  <use xlink:href="./img/sprite.svg#tick"></use>
+                </svg>
+                Экскурсии по удивительно красивым местам Европы
+              </li>
+            </ul>
+            <button class="rate__buy button">
+              Купить тур сейчас
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="questions">
+    <div class="container">
+      <div class="questions__wrapper">
+        <div class="questions__photo">
+          <picture>
+            <img class="questions__image" src="./img/questions.webp" srcset="./img/questions@2x.webp 2x"
+              alt="">
+          </picture>
+        </div>
+        <form action="post" class="questions__form">
+          <h3 class="questions__title">
+            У Вас остались вопросы?
+          </h3>
+          <p class="questions__text">
+            Оставьте свой номер или e-mail и мы свяжемся с Вами
+          </p>
+            <input class="questions__input questions__input--tel" type="tel" placeholder="Введите 10 цифр номера">
+            <input class="questions__input questions__input--email" type="email" placeholder="Email">
+          <div class="questions__cover">
+            <button type="submit" class="question__submit button">Отправить</button>
+          </div>
+        </form>
       </div>
     </div>
   </section>
