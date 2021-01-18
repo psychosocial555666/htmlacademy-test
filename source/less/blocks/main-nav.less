@@ -63,27 +63,29 @@
 @media (max-width: @tablet) {
   .main-nav {
     width: 100%;
-    top: 0;
+    top: 50px;
     right: 0;
     position: absolute;
     background-color: @white;
   }
 
   .main-nav--nojs {
-    position: static;
+    position: relative;
+    top: 15px;
   }
 
   .main-nav__toggle {
     display: block;
     position: absolute;
-    top: 0;
+    top: -50px;
     right: 0;
 
     width: 72px;
     height: 50px;
     border: none;
+    outline: none;
     background-color: transparent;
-    background-image: url(../../img/menu-close.svg);
+    background-image: url(../img/menu-close.svg);
     background-repeat: no-repeat;
     background-position: center;
 
@@ -117,7 +119,7 @@
       width: 12px;
       height: 12px;
       display: block;
-      background-image: url(../../img/arrow-right.svg);
+      background-image: url(../img/arrow-right.svg);
       background-repeat: no-repeat;
       background-position: 0 0;
       margin-left: auto;
@@ -135,7 +137,7 @@
 
     .main-nav__toggle {
       background-color: @accent;
-      background-image: url(../../img/menu.svg);
+      background-image: url(../img/menu.svg);
 
       &:hover {
         opacity: 1;

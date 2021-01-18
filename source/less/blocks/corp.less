@@ -1,9 +1,27 @@
 .corp {
   padding-left: 50px;
   padding-right: 20px;
+  width: 32%;
 }
 
 .corp__text {
   font-size: 14px;
   line-height: 170%;
+}
+
+@media (max-width: @tablet) {
+  .corp {
+    padding: 0;
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #D7D9DF;
+  }
+}
+
+@media (max-width: @mobile) {
+  .corp {
+    padding: 0;
+    border-top: none;
+  }
 }

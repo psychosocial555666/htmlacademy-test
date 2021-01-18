@@ -1,5 +1,6 @@
 .page-footer {
   padding-bottom: 75px;
+
 }
 .page-footer__wrapper {
   display: flex;
@@ -7,10 +8,11 @@
   font-weight: @regular;
   font-size: 14px;
   line-height: 17px;
+  padding-left: 14px;
 }
 
 .page-footer__cover {
-  width: 33.33%;
+  width: 33.6%;
   box-sizing: border-box;
 }
 
@@ -21,4 +23,18 @@
   color: @ultra-dark;
   margin: 0;
   margin-bottom: 20px;
+}
+
+@media (max-width: @tablet) {
+  .page-footer__wrapper {
+    flex-wrap: wrap;
+    padding: 0 21px 0 21px;
+  }
+}
+
+@media (max-width: @mobile) {
+  .page-footer__wrapper {
+    flex-wrap: wrap;
+    padding: 0 21px 0 11px;
+  }
 }

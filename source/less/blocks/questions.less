@@ -1,9 +1,10 @@
 .questions {
-  margin-bottom: 170px;
+  margin-bottom: 165px;
 }
 
 .questions__wrapper {
   position: relative;
+  padding-left: 11px;
 }
 
 .questions__form {
@@ -16,9 +17,10 @@
   padding: 50px;
   box-sizing: border-box;
   top: 50%;
-  right: 0;
+  right: -11px;
   transform: translate(0, -50%);
   border-radius: 5px;
+  box-shadow: 0px 4px 30px rgba(41, 54, 66, 0.1);
 }
 
 .questions__title {
@@ -47,47 +49,8 @@
   justify-content: center;
 }
 
-.questions__input {
-  font-weight: @regular;
-  font-size: 14px;
-  line-height: 17px;
-  padding: 17px 15px;
-  box-sizing: border-box;
-  width: 269px;
+.questions__field {
   margin-bottom: 25px;
-  border: none;
-  outline: none;
-  box-shadow: 0 0 0 1px fade(@dark, 30) inset;
-
-  &::-webkit-input-placeholder {
-    color: @dark;
-  }
-
-  &::-moz-placeholder {
-    color: @dark;
-  }
-
-  &:-moz-placeholder {
-    color: @dark;
-  }
-
-  &:-ms-input-placeholder {
-    color: @dark;
-  }
-}
-
-.questions__input--tel {
-  padding-left: 57px;
-  position: relative;
-  &::before {
-    content: "+7";
-    position: absolute;
-    top: 17px;
-    left: 15px;
-    width: 15px;
-    height: 15px;
-    display: block;
-  }
 }
 
 .questions__input--email {
@@ -100,11 +63,19 @@
 }
 
 @media (max-width: @tablet) {
+  .questions {
+    margin-bottom: 80px;
+  }
+
   .questions__photo {
     width: 100%;
     height: 456px;
     position: relative;
     overflow: hidden;
+  }
+
+  .questions__wrapper {
+    padding-left: 0;
   }
 
   .questions__image {
@@ -122,19 +93,41 @@
     right: auto;
     transform: translate(-50%, -50%);
   }
+
+  .questions__submit {
+    width: 250px;
+  }
 }
 
 @media (max-width: @mobile) {
+  .questions {
+    margin-bottom: 72px;
+  }
+
+  .questions__title {
+    margin-bottom: 20px;
+  }
+
+  .questions__text {
+    margin-bottom: 19px;
+  }
 
   .questions__form {
     position: static;
     width: 100%;
     transform: translate(0, 0);
     padding: 50px 16px;
+    box-shadow: none;
+    background-color: @light-grey;
   }
 
   .questions__photo {
     display: none;
+  }
+
+  .questions__field {
+    width: 100%;
+    margin-bottom: 19px;
   }
 
   .questions__input {

@@ -9,6 +9,47 @@
 </head>
 
 <body>
+  <section class="modal modal--success">
+    <div class="modal__content">
+      <button class="modal__close"></button>
+      <p class="modal__text">
+        Форма успешно отправлена, <br> спасибо! :)
+      </p>
+    </div>
+    <div class="modal__overlay">
+    </div>
+  </section>
+
+  <section class="modal modal--tour">
+    <div class="modal__content">
+      <button class="modal__close"></button>
+      <picture>
+        <img class="modal__picture" src="./img/modal.webp" srcset="./img/modal@2x.webp 2x" alt="Tides">
+      </picture>
+      <form action="post" class="modal__form">
+        <h3 class="modal__title">
+          Купить тур
+        </h3>
+        <div class="custom-field modal__field modal__tel">
+          <input name="tel" class="custom-field__input custom-field__input--tel" type="tel"
+            placeholder="Введите 10 цифр номера" pattern="[0-9]+" minlength="5" maxlength="12" >
+          <label for="tel" class="custom-field__label custom-field__label--tel">
+            <sup>*</sup> +7
+          </label>
+        </div>
+        <div class="custom-field modal__field modal__email">
+          <input name="email" class="custom-field__input custom-field__input--email" type="email" placeholder="Email" >
+          <label for="email" class="custom-field__label custom-field__label--email"></label>
+        </div>
+        <div class="modal__cover">
+          <button type="submit" class="modal__submit button">Отправить</button>
+        </div>
+      </form>
+    </div>
+    <div class="modal__overlay">
+    </div>
+  </section>
+
   <header class="page-header">
     <div class="container">
       <div class="page-header__wrapper">
@@ -23,12 +64,12 @@
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">
+              <a href="#visit-place" class="main-nav__link">
                 О путешествии
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">
+              <a href="#pricelist" class="main-nav__link">
                 Цены
               </a>
             </li>
@@ -66,6 +107,7 @@
   </section>
 
   <section class="visit">
+    <a href="#" name="visit-place"></a>
     <div class="container">
       <div class="visit__wrapper">
         <h2 class="visit__title title">
@@ -77,7 +119,7 @@
 
         <ul class="visit__list">
           <li class="visit__item">
-            <a href="#tabs-list"  name="greece" class="visit__link">
+            <a href="#tabs-list" name="greece" class="visit__link">
               <picture>
                 <img class=".visit__picture" src="./img/visit-gre.webp" srcset="./img/visit-gre@2x.webp 2x"
                   alt="Greece">
@@ -88,7 +130,7 @@
             </a>
           </li>
           <li class="visit__item">
-            <a href="#tabs-list"  name="albania" class="visit__link">
+            <a href="#tabs-list" name="albania" class="visit__link">
               <picture>
                 <img class=".visit__picture" src="./img/visit-alb.webp" srcset="./img/visit-alb@2x.webp 2x"
                   alt="Albania">
@@ -99,7 +141,7 @@
             </a>
           </li>
           <li class="visit__item">
-            <a href="#tabs-list"  name="makedonia" class="visit__link">
+            <a href="#tabs-list" name="makedonia" class="visit__link">
               <picture>
                 <img class=".visit__picture" src="./img/visit-mak.webp" srcset="./img/visit-mak@2x.webp 2x"
                   alt="Makedonia">
@@ -110,7 +152,7 @@
             </a>
           </li>
           <li class="visit__item">
-            <a href="#tabs-list"  name="montenegro" class="visit__link">
+            <a href="#tabs-list" name="montenegro" class="visit__link">
               <picture>
                 <img class=".visit__picture" src="./img/visit-mon.webp" srcset="./img/visit-mon@2x.webp 2x"
                   alt="Montenegro">
@@ -121,7 +163,7 @@
             </a>
           </li>
           <li class="visit__item">
-            <a href="#tabs-list"  name="croatia" class="visit__link">
+            <a href="#tabs-list" name="croatia" class="visit__link">
               <picture>
                 <img class=".visit__picture" src="./img/visit-cro.webp" srcset="./img/visit-cro@2x.webp 2x"
                   alt="Croatia">
@@ -167,9 +209,8 @@
             </div>
             <div class="tab__picture">
               <picture>
-                <source media="(max-width: 767px)"
-                  srcset="./img/tab-mobile-gre.webp 1x, ./img/tab-mobile-gre@2x.webp 2x">
-                <img src="./img/tab-gre.webp" srcset="./img/tab-gre@2x.webp 2x" alt="Greece">
+                <source media="(max-width: 1023px)" srcset="./img/tab-gre.webp 1x, ./img/tab-gre@2x.webp 2x">
+                <img src="./img/tab-desktop-gre.webp" srcset="./img/tab-desktop-gre@2x.webp 2x" alt="Greece">
               </picture>
             </div>
             <div class="tab__review review">
@@ -203,9 +244,8 @@
             </div>
             <div class="tab__picture">
               <picture>
-                <source media="(max-width: 767px)"
-                  srcset="./img/tab-mobile-alb.webp 1x, ./img/tab-mobile-alb@2x.webp 2x">
-                <img src="./img/tab-alb.webp" srcset="./img/tab-alb@2x.webp 2x" alt="Albania">
+                <source media="(max-width: 1023px)" srcset="./img/tab-alb.webp 1x, ./img/tab-alb@2x.webp 2x">
+                <img src="./img/tab-desktop-alb.webp" srcset="./img/tab-desktop-alb@2x.webp 2x" alt="Greece">
               </picture>
             </div>
             <div class="tab__review review">
@@ -237,9 +277,8 @@
             </div>
             <div class="tab__picture">
               <picture>
-                <source media="(max-width: 767px)"
-                  srcset="./img/tab-mobile-mak.webp 1x, ./img/tab-mobile-mak@2x.webp 2x">
-                <img src="./img/tab-mak.webp" srcset="./img/tab-mak@2x.webp 2x" alt="Makedonia">
+                <source media="(max-width: 1023px)" srcset="./img/tab-mak.webp 1x, ./img/tab-mak@2x.webp 2x">
+                <img src="./img/tab-desktop-mak.webp" srcset="./img/tab-desktop-mak@2x.webp 2x" alt="Greece">
               </picture>
             </div>
             <div class="tab__review review">
@@ -272,9 +311,8 @@
             </div>
             <div class="tab__picture">
               <picture>
-                <source media="(max-width: 767px)"
-                  srcset="./img/tab-mobile-mon.webp 1x, ./img/tab-mobile-mon@2x.webp 2x">
-                <img src="./img/tab-mon.webp" srcset="./img/tab-mon@2x.webp 2x" alt="Montenegro">
+                <source media="(max-width: 1023px)" srcset="./img/tab-mon.webp 1x, ./img/tab-mon@2x.webp 2x">
+                <img src="./img/tab-desktop-mon.webp" srcset="./img/tab-desktop-mon@2x.webp 2x" alt="Greece">
               </picture>
             </div>
             <div class="tab__review review">
@@ -306,9 +344,8 @@
             </div>
             <div class="tab__picture">
               <picture>
-                <source media="(max-width: 767px)"
-                  srcset="./img/tab-mobile-cro.webp 1x, ./img/tab-mobile-cro@2x.webp 2x">
-                <img src="./img/tab-cro.webp" srcset="./img/tab-cro@2x.webp 2x" alt="Croatia">
+                <source media="(max-width: 1023px)" srcset="./img/tab-cro.webp 1x, ./img/tab-cro@2x.webp 2x">
+                <img src="./img/tab-desktop-cro.webp" srcset="./img/tab-desktop-cro@2x.webp 2x" alt="Greece">
               </picture>
             </div>
             <div class="tab__review review">
@@ -333,6 +370,7 @@
     </div>
 
     <div class="price">
+      <a href="#" name="pricelist"></a>
       <div class="container">
         <div class="price__wrapper">
           <div class="price__cover">
@@ -340,12 +378,13 @@
               Цены
             </h2>
             <p class="price__description">
-              Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!
+              Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и
+              возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!
             </p>
             <div class="price__contacts">
               <h3 class="price__connect">Свяжитесь с нами</h3>
               <a href="tel:+749978468446" class="price__phone">
-                <svg width="57" height="22">
+                <svg width="22" height="22">
                   <use xlink:href="./img/sprite.svg#tel"></use>
                 </svg>
                 <span>+7 (499) -784-684-46</span>
@@ -396,7 +435,7 @@
               <span class="rate__cost">$1399</span>
             </h3>
             <p class="rate__description">
-              Ознакомьтесь с перечнем того, что входит в данный пакет             </p>
+              Ознакомьтесь с перечнем того, что входит в данный пакет </p>
             <ul class="rate__list">
               <li class="rate__item">
                 <svg width="22" height="22">
@@ -442,8 +481,7 @@
       <div class="questions__wrapper">
         <div class="questions__photo">
           <picture>
-            <img class="questions__image" src="./img/questions.webp" srcset="./img/questions@2x.webp 2x"
-              alt="">
+            <img class="questions__image" src="./img/questions.webp" srcset="./img/questions@2x.webp 2x" alt="">
           </picture>
         </div>
         <form action="post" class="questions__form">
@@ -453,8 +491,20 @@
           <p class="questions__text">
             Оставьте свой номер или e-mail и мы свяжемся с Вами
           </p>
-            <input class="questions__input questions__input--tel" type="tel" placeholder="Введите 10 цифр номера">
-            <input class="questions__input questions__input--email" type="email" placeholder="Email">
+          <div class="questions__field custom-field">
+            <input name="tel"
+              class="questions__input questions__input--tel custom-field__input custom-field__input--tel" type="tel"
+              placeholder="Введите 10 цифр номера" pattern="[0-9]+" minlength="5" maxlength="12" >
+            <label for="tel" class="custom-field__label custom-field__label--tel">
+              <sup>*</sup> +7
+            </label>
+          </div>
+          <div class="questions__field custom-field">
+            <input name="email"
+              class="questions__input questions__input--email custom-field__input custom-field__input--email"
+              type="email" placeholder="Email" >
+            <label for="email" class="custom-field__label custom-field__label--email"></label>
+          </div>
           <div class="questions__cover">
             <button type="submit" class="questions__submit button">Отправить</button>
           </div>
@@ -536,7 +586,7 @@
             <span class="contacts__short">Почта</span>
           </a>
           <a href="tel:+749978468446" class="contacts__link contacts__link--tel">
-            <svg width="30" height="30">
+            <svg width="26" height="26">
               <use xlink:href="./img/sprite.svg#tel"></use>
             </svg>
             <span>+7 (499) -784-684-46</span>
@@ -547,7 +597,8 @@
             Корпоративные путешествия
           </h4>
           <p class="corp__text">
-            Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением
+            Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают
+            компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением
           </p>
         </div>
       </div>

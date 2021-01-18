@@ -6,28 +6,35 @@ body {
   font-family: @main-font;
   color: @dark;
 }
+
 input {
   font-family: @main-font;
 }
+
 button {
   font-family: @main-font;
 }
+
 textarea {
   font-family: @main-font;
   overflow: hidden;
 }
+
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
 input[type="number"]:hover,
 input[type="number"]:focus {
   -moz-appearance: number-input;
 }
+
 input[type="file"] {
   display: none;
 }
@@ -52,6 +59,8 @@ input[type="file"] {
   margin: 0;
   padding: 0;
   position: relative;
+  letter-spacing: -1px;
+
   &::before {
     content: "";
     position: absolute;
@@ -71,6 +80,7 @@ input[type="file"] {
     font-size: 30px;
     line-height: 150%;
     text-align: center;
+    letter-spacing: 0;
 
     br {
       display: none;
@@ -81,6 +91,10 @@ input[type="file"] {
     }
   }
 }
-@media (max-width: @mobile) {
 
+@media (max-width: @mobile) {
+  .title {
+    font-size: 24px;
+    line-height: 150%;
+  }
 }

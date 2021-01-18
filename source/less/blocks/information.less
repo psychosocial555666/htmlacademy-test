@@ -4,7 +4,7 @@
 }
 
 .information__title {
-  padding: 0 0 20px;
+  padding: 15px 0 22px;
   margin-bottom: 30px;
 
   &::before {
@@ -15,12 +15,13 @@
 .information__text {
   padding: 0;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
   color: @dark-opacity;
-  padding-right: 80px;
+  padding-right: 100px;
+  letter-spacing: -0.466667px;
 }
 
 .information__buy {
@@ -45,15 +46,28 @@
   .information__text {
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     text-align: center;
   }
 
   .information__buy {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
+    font-size: 10px;
   }
 }
+
 @media (max-width: @mobile) {
+  .information {
+    padding: 0 16px;
+    margin-bottom: 20px;
+  }
+
+  .information__title {
+    padding: 5px 0 20px;
+    font-size: 24px;
+    line-height: 150%;
+  }
+
   .information__buy {
     width: 100%;
   }

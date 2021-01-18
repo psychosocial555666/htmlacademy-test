@@ -13,7 +13,7 @@
   font-weight: @medium;
   font-size: 30px;
   line-height: 37px;
-  padding-bottom: 10px;
+  padding-bottom: 14px;
   margin-bottom: 20px;
 
   &::before {
@@ -51,25 +51,35 @@
     padding: 30px;
     top: auto;
     right: auto;
-    bottom: 0;
+    bottom: -17px;
     left: 50%;
     transform: translate(-50%, 0);
   }
 
   .review__title {
     text-align: left;
+    letter-spacing: -0.691667px;
 
     &::before {
       display: block;
     }
   }
+
+  .review__text {
+    letter-spacing: -0.408333px;
+    margin-bottom: 30px;
+  }
+
+  .review__name {
+    letter-spacing: -0.466667px;
+  }
 }
 
 @media (max-width: @mobile) {
   .review {
-    width: 288px;
+    width: 268px;
     padding: 30px 20px;
-    bottom: -34px;
+    bottom: -51px;
   }
 
   .review__title {
@@ -84,6 +94,7 @@
   }
   .review__text {
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .review__autor {

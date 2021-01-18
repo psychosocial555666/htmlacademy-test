@@ -1,11 +1,20 @@
 .catalog {
-  background-image: url(../../img/world.png);
+  background-image: url(../img/world.png);
   background-repeat: no-repeat;
-  background-position: 0 145px;
+  background-position: 121px 147px;
   background-size: 1444px 1089px;
   margin-bottom: 138px;
 }
 
-@media (max-width: @mobile) {
-  background-image: none;
+@media (max-width: @tablet) {
+  .catalog {
+    background-image: none;
+    margin-bottom: 124px;
+  }
+}
+
+@media (max-width: @tablet) {
+  .catalog {
+    margin-bottom: 50px;
+  }
 }

@@ -1,0 +1,60 @@
+
+.custom-field {
+  position: relative;
+  width: 269px;
+  box-sizing: border-box;
+}
+
+.custom-field__input {
+  font-weight: @regular;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 17px 15px;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0 1px fade(@dark, 30) inset;
+
+  &::-webkit-input-placeholder {
+    color: @dark;
+  }
+
+  &::-moz-placeholder {
+    color: @dark;
+  }
+
+  &:-moz-placeholder {
+    color: @dark;
+  }
+
+  &:-ms-input-placeholder {
+    color: @dark;
+  }
+
+  &:invalid {
+    box-shadow: 0 0 0 1px @accent inset;
+  }
+
+  &:invalid + .custom-field__label {
+    &::before {
+      content: "Данные не верны";
+      position: absolute;
+      top: -32px;
+      left: -15px;
+      color: @accent-hover;
+      display: block;
+      width: 200px;
+    }
+  }
+}
+
+.custom-field__input--tel {
+  padding-left: 57px;
+}
+
+.custom-field__label {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+}

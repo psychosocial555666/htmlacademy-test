@@ -1,7 +1,7 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  padding-left: 90px;
+  padding-left: 89px;
   border-right: 1px solid #D7D9DF;
   border-left: 1px solid #D7D9DF;
 }
@@ -21,14 +21,46 @@
 .contacts__link--tel {
   font-size: 16px;
   line-height: 32px;
+
   svg {
     fill: @white;
     stroke: #D7D9DF;
   }
 }
 
-
-
 .contacts__short {
   display: none;
+}
+
+@media (max-width: @tablet) {
+  .contacts {
+    width: 46%;
+    border-right: none;
+    padding-left: 52px;
+    margin-bottom: 25px;
+  }
+
+  .contacts__short {
+    display: block;
+  }
+
+  .contacts__full {
+    display: none;
+  }
+}
+
+@media (max-width: @mobile) {
+  .contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 2px;
+    margin-bottom: 30px;
+    border-left: none;
+    border-top: 1px solid #D7D9DF;
+    border-bottom: 1px solid #D7D9DF;
+  }
+
+
 }
