@@ -4,7 +4,7 @@
 }
 
 .price__cover {
-  padding: 117px 0px 0 84px;
+  padding: 117px 0 0 84px;
   width: 31.7%;
   box-sizing: border-box;
   order: 2;
@@ -59,6 +59,11 @@
     stroke: @accent;
     margin-right: 21px;
   }
+
+  &:focus,
+  &:hover {
+    color: @accent-hover;
+  }
 }
 
 @media (max-width: @tablet) {
@@ -101,6 +106,7 @@
     line-height: 32px;
     color: @accent;
     text-decoration: underline;
+
     svg {
       display: none;
     }

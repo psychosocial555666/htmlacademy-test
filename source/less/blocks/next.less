@@ -22,6 +22,11 @@
   padding: 5px 0;
   text-decoration: none;
   color: fade(@ultra-dark, 50);
+
+  &:focus,
+  &:hover {
+    color: @accent-hover;
+  }
 }
 
 @media (max-width: @tablet) {
@@ -51,6 +56,7 @@
     width: 50%;
     margin-right: 0;
     margin-bottom: 13px;
+
     &:last-child {
       margin-bottom: 0;
     }

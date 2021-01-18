@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   padding-left: 89px;
-  border-right: 1px solid #D7D9DF;
-  border-left: 1px solid #D7D9DF;
+  border-right: 1px solid #d7d9df;
+  border-left: 1px solid #d7d9df;
 }
 
 .contacts__link {
@@ -13,8 +13,13 @@
   margin-bottom: 15px;
 
   svg {
-    fill: #D7D9DF;
+    fill: #d7d9df;
     margin-right: 15px;
+  }
+
+  &:focus,
+  &:hover {
+    color: @dark;
   }
 }
 
@@ -24,7 +29,7 @@
 
   svg {
     fill: @white;
-    stroke: #D7D9DF;
+    stroke: #d7d9df;
   }
 }
 
@@ -58,9 +63,7 @@
     padding: 30px 0 2px;
     margin-bottom: 30px;
     border-left: none;
-    border-top: 1px solid #D7D9DF;
-    border-bottom: 1px solid #D7D9DF;
+    border-top: 1px solid #d7d9df;
+    border-bottom: 1px solid #d7d9df;
   }
-
-
 }

@@ -6,6 +6,7 @@
 
 .tabs__wrapper {
   position: relative;
+
   &::after {
     content: "";
     position: absolute;
@@ -30,6 +31,11 @@
   text-decoration: none;
   padding: 15px 0;
   letter-spacing: -0.415px;
+
+  &:hover,
+  &:focus {
+    color: @accent-hover;
+  }
 }
 
 .tabs__link--active {
@@ -74,6 +80,7 @@
 
   .tabs__link {
     margin-right: 100px;
+
     &:last-child {
       margin-right: 0;
     }

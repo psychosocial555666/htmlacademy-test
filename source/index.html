@@ -31,14 +31,15 @@
           Купить тур
         </h3>
         <div class="custom-field modal__field modal__tel">
-          <input name="tel" class="custom-field__input custom-field__input--tel" type="tel"
-            placeholder="Введите 10 цифр номера" pattern="[0-9]+" minlength="5" maxlength="12" >
+          <input id="tel" name="tel" class="custom-field__input custom-field__input--tel" type="tel"
+            placeholder="Введите 10 цифр номера" pattern="[0-9]+" minlength="5" maxlength="12">
           <label for="tel" class="custom-field__label custom-field__label--tel">
             <sup>*</sup> +7
           </label>
         </div>
         <div class="custom-field modal__field modal__email">
-          <input name="email" class="custom-field__input custom-field__input--email" type="email" placeholder="Email" >
+          <input id="email" name="email" class="custom-field__input custom-field__input--email" type="email"
+            placeholder="Email">
           <label for="email" class="custom-field__label custom-field__label--email"></label>
         </div>
         <div class="modal__cover">
@@ -180,7 +181,7 @@
 
   <section class="catalog">
     <div class="container">
-      <div class="tabs" name="tabs-list">
+      <div class="tabs">
         <a class="visually-hidden" href="#" name="tabs-list"></a>
         <div class="tabs__wrapper">
           <div class="tabs__nav">
@@ -494,7 +495,7 @@
           <div class="questions__field custom-field">
             <input name="tel"
               class="questions__input questions__input--tel custom-field__input custom-field__input--tel" type="tel"
-              placeholder="Введите 10 цифр номера" pattern="[0-9]+" minlength="5" maxlength="12" >
+              placeholder="Введите 10 цифр номера" pattern="[0-9]+" minlength="5" maxlength="12">
             <label for="tel" class="custom-field__label custom-field__label--tel">
               <sup>*</sup> +7
             </label>
@@ -502,7 +503,7 @@
           <div class="questions__field custom-field">
             <input name="email"
               class="questions__input questions__input--email custom-field__input custom-field__input--email"
-              type="email" placeholder="Email" >
+              type="email" placeholder="Email">
             <label for="email" class="custom-field__label custom-field__label--email"></label>
           </div>
           <div class="questions__cover">
@@ -604,7 +605,7 @@
       </div>
     </div>
   </footer>
+  <script type="text/javascript" src="./js/script.min.js"></script>
 </body>
-<script src="./js/script.min.js"></script>
 
 </html>
