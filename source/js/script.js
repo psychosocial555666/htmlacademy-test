@@ -73,11 +73,11 @@ let onModalTourOpen = () => {
 };
 
 let onModalSuccessOpen = (evt) => {
-  closeModal();
   let tel = evt.target.querySelector(".custom-field__input--tel");
   let email = evt.target.querySelector(".custom-field__input--email");
   if (tel.value && email.value !== '') {
     evt.preventDefault();
+    closeModal();
     openModal(modalSuccess);
     tel.value = "";
     email.value = "";
